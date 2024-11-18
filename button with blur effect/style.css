@@ -1,0 +1,81 @@
+@import url("https://use.fontawesome.com/releases/v6.5.1/css/all.css");
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  background-color: #e8e8e8;
+}
+
+.container {
+  display: flex;
+  gap: 45px;
+}
+
+.btn {
+  width: 65px;
+  height: 65px;
+  cursor: pointer;
+  border-radius: 10px;
+  position: relative;
+  border: none;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s;
+}
+
+.blur {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #9c9c9c77;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  background-color: transparent;
+  letter-spacing: 0.8px;
+  backdrop-filter: blur(0px);
+  transition: all 0.3s;
+}
+
+.fa-brands {
+  font-size: 24px;
+  color: #fff;
+}
+
+.bg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  border-radius: 10px;
+  pointer-events: none;
+  transition: all 0.3s;
+  z-index: -1;
+}
+
+.btn:nth-child(1) .bg {
+  background-color: #ff0050;
+}
+.btn:nth-child(2) .bg {
+  background-color: #181818;
+}
+.btn:nth-child(3) .bg {
+  background-color: #1db954;
+}
+
+.btn:hover .bg {
+  transform: rotate(35deg);
+  transform-origin: bottom;
+}
+
+.btn:hover .blur {
+  background-color: #9c9c9c77;
+  backdrop-filter: blur(4px);
+}
