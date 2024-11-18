@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tesla Clone</title>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header>
+      <input type="checkbox" name="check" id="button" />
+      <nav>
+        <div class="nav-logo">
+          <img src="./images/logo.svg" alt="logo" class="logo" />
+        </div>
+        <div class="nav-menu">
+          <ul class="nav-list">
+            <li class="nav-item"><a href="#" class="nav-link">車輛</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">能源</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">充電</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">探索</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">線上商店</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">We, Robot</a></li>
+          </ul>
+        </div>
+        <div class="nav-menu">
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a href="#" class="nav-link"><i class="bx bx-help-circle"></i></a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link"><i class="bx bx-globe"></i></a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link"><i class="bx bx-user-circle"></i></a>
+            </li>
+          </ul>
+        </div>
+        <div class="nav-toggle">
+          <label class="nav_button" for="button">選 單</label>
+          <div class="menu">
+            <label class="button" for="button"><i class="bx bx-x"></i></label>
+            <ul class="list">
+              <li class="item">
+                <a href="#" class="link"
+                  >車輛<i class="bx bx-chevron-right"></i
+                ></a>
+              </li>
+              <li class="item">
+                <a href="#" class="link"
+                  >能源<i class="bx bx-chevron-right"></i
+                ></a>
+              </li>
+              <li class="item">
+                <a href="#" class="link"
+                  >充電<i class="bx bx-chevron-right"></i
+                ></a>
+              </li>
+              <li class="item">
+                <a href="#" class="link"
+                  >探索<i class="bx bx-chevron-right"></i
+                ></a>
+              </li>
+              <li class="item">
+                <a href="#" class="link">線上商店</a>
+              </li>
+              <li class="item">
+                <a href="#" class="link">We, Robot </a>
+              </li>
+              <li class="item">
+                <a href="#" class="link">支援</a>
+              </li>
+              <li class="item">
+                <a href="#" class="link">
+                  <div class="help">
+                    <i class="bx bx-globe"></i> <span>Taiwan</span>
+                  </div>
+                  <i class="bx bx-chevron-right"></i>
+                </a>
+              </li>
+              <li class="item">
+                <a href="#" class="link">
+                  <div class="help">
+                    <i class="bx bx-user-circle"></i>
+                    <span>帳戶</span>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="home" id="model-s">
+        <div class="car_model">
+          <h1 class="car_model_title">Model S</h1>
+          <p class="car_model_paragraph">
+            限時利率最低達 2.08%<br />或指定財務方案月付最低 $26,910 起
+            <a href="#" class="car_model_link">立即預約試駕</a>
+          </p>
+        </div>
+        <div class="home_button">
+          <div class="button home_button_order">
+            <a href="">立即訂購</a>
+          </div>
+          <div class="button home_button_exist">
+            <a href="">了解更多內容</a>
+          </div>
+        </div>
+      </div>
+      <div class="home" id="model-y"></div>
+      <div class="home" id="model-3"></div>
+      <div class="home" id="model-x"></div>
+      <div class="home" id="solar-panels"></div>
+      <div class="home" id="solar-roof"></div>
+    </main>
+    <script src="./script.js"></script>
+  </body>
+</html>

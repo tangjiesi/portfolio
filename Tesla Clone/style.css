@@ -1,0 +1,339 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700&display=swap");
+
+:root {
+  --first-color: rgba(0, 0, 0, 1);
+  --second-color: rgba(0, 0, 0, 0.8);
+  --third-color: rgba(255, 255, 255, 0.7);
+  --header-height: 3rem;
+  --z-fixed: 100;
+  --normal-font-size: 0.9rem;
+  --h2-font-size: 2rem;
+  --font-light: 300;
+  --font-medium: 500;
+  --radius: 0.12rem;
+
+  --model_s: "../img/Model-s.jpg";
+  --model_y: "../img/Model-Y.jpg";
+  --model_3: "../img/Model-3.jpg";
+  --model_x: "../img/Model-X.jpg";
+  --solar_panels: "../img/SolarPanels.jpg";
+  --solar_roof: "../img/solar-roof.jpg";
+}
+
+@media screen and (min-width: 600px) {
+  :root {
+    --h2-font-size: 2.5rem;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--body-font);
+}
+
+h1,
+h2,
+h3 {
+  font-weight: bold;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+p {
+  font-size: var(--normal-font-size);
+}
+
+header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  color: var(--first-color);
+  z-index: var(--z-fixed);
+}
+
+nav {
+  height: var(--header-height);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 2rem;
+  font-size: var(--normal-font-size);
+  font-weight: var(--font-medium);
+}
+
+nav .nav-logo {
+  width: 100px;
+  display: flex;
+  align-items: center;
+}
+
+nav .nav-menu {
+  display: none;
+}
+
+nav .nav-menu .nav-list {
+  display: flex;
+}
+
+nav .nav-menu:nth-child(2) .nav-list .nav-item {
+  padding: 0.3rem 1rem;
+  border-radius: var(--radius);
+}
+
+nav .nav-menu:nth-child(3) .nav-list .nav-item {
+  padding: 0.3rem 0.5rem;
+  border-radius: var(--radius);
+}
+
+nav .nav-link {
+  color: var(--first-color);
+}
+
+nav .bx {
+  font-size: 1.5rem;
+}
+
+nav .nav-menu .nav-list .nav-item:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+input#button {
+  display: none;
+}
+
+nav .nav-toggle .nav_button {
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 0.3rem 1rem;
+  border-radius: var(--radius);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav .nav-toggle label {
+  cursor: pointer;
+}
+
+nav .nav-toggle label:last-child {
+  display: none;
+}
+
+nav .nav-toggle .menu {
+  width: 100svw;
+  height: 100svh;
+  background-color: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  pointer-events: none;
+  /* display: none; */
+  transition: all 0.3s ease-in;
+  overflow-y: scroll;
+  overscroll-behavior: contain;
+}
+
+nav .nav-toggle .menu label {
+  position: absolute;
+  top: 0.7rem;
+  right: 1.5rem;
+  padding: 0.3rem 0.5rem;
+  border-radius: var(--radius);
+}
+
+nav .nav-toggle .menu label:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+nav .nav-toggle .list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: var(--header-height);
+  padding: 1.5rem;
+}
+
+nav .nav-toggle .menu .item {
+  width: 100%;
+  height: 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0.5rem 0;
+  padding: 0 0.5rem;
+  border-radius: var(--radius);
+}
+
+nav .nav-toggle .menu .item:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+nav .nav-toggle .menu .item .link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  font-size: 1.1rem;
+  color: var(--first-color);
+}
+
+nav .nav-toggle .menu .help {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+input#button:checked + nav .nav-toggle .menu {
+  opacity: 1;
+  pointer-events: auto;
+  /* display: block; */
+}
+
+@media screen and (min-width: 1200px) {
+  nav .nav-menu {
+    display: flex;
+  }
+  nav .nav-toggle {
+    display: none;
+  }
+}
+
+main {
+  height: 100svh;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+}
+
+main .home {
+  height: 100svh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-position: center;
+  background-size: cover;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+}
+
+#model-s {
+  background-image: url(./images/Model-s.jpg);
+}
+
+#model-y {
+  background-image: url(./images/Model-Y.jpg);
+}
+
+#model-3 {
+  background-image: url(./images/Model-3.jpg);
+}
+
+#model-x {
+  background-image: url(./images/Model-X.jpg);
+}
+
+#solar-panels {
+  background-image: url(./images/SolarPanels.jpg);
+}
+
+#solar-roof {
+  background-image: url(./images/solar-roof.jpg);
+}
+
+main .home .car_model {
+  position: fixed;
+  top: calc(5vh + var(--header-height));
+}
+
+main .home .car_model .car_model_title {
+  text-align: center;
+  font-size: var(--h2-font-size);
+  font-weight: var(--font-medium);
+}
+
+main .home .car_model .car_model_paragraph {
+  display: flex;
+  flex-direction: column;
+  font-size: var(--normal-font-size);
+  letter-spacing: 0.07rem;
+  text-underline-offset: 4px;
+  text-align: center;
+}
+
+main .home .car_model .car_model_paragraph .car_model_link {
+  color: var(--first-color);
+  text-decoration: underline;
+}
+
+main .home .home_button {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  position: fixed;
+  bottom: 5vh;
+  font-size: var(--normal-font-size);
+  font-weight: var(--font-medium);
+}
+
+main .home .home_button .button {
+  width: 90vw;
+  height: 2.5rem;
+  border-radius: 0.2rem;
+  letter-spacing: 0.05rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--second-color);
+}
+
+main .home .home_button .home_button_order a {
+  color: white;
+}
+
+main .home .home_button .home_button_exist {
+  background-color: var(--third-color);
+}
+
+main .home .home_button .home_button_exist a {
+  color: black;
+}
+
+@media screen and (min-width: 600px) {
+  main .home .car_model {
+    top: calc(5vh + var(--header-height));
+  }
+  main .home .home_button {
+    flex-direction: row;
+    gap: 1.5rem;
+    bottom: 10vh;
+  }
+
+  main .home .home_button .button {
+    width: 12.5rem;
+  }
+}
+
+@media screen and (min-width: 840px) {
+  main .home .home_button .button {
+    width: 16.5rem;
+  }
+}
