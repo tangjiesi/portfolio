@@ -1,0 +1,169 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100svh;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background: linear-gradient(135deg, #74ebd5, #acb6e5);
+}
+
+.container {
+  width: 90vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container h1 {
+  color: #333;
+  font-size: 2.5rem;
+}
+
+.container form {
+  width: 300px;
+  display: flex;
+  position: relative;
+  margin: 1rem 0 1.5rem;
+}
+
+.container form input {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  font-size: 1rem;
+  color: #555;
+  border-radius: 100px;
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  outline: none;
+}
+
+.container form input:focus {
+  border-color: #74ebd5;
+  box-shadow: 0 4px 15px rgba(116, 235, 213, 0.3);
+}
+
+.container form .search-btn {
+  height: 100%;
+  position: absolute;
+  right: 1rem;
+  font-size: 1.5rem;
+  color: #666;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+
+.container .card {
+  min-width: 300px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 1rem;
+  color: rgb(28, 29, 33);
+  background-color: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+}
+
+.card .weather {
+  flex-shrink: 0;
+}
+
+.card .weather .icon {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.card .city-name {
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+.card .weather-main {
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+.card .weather-description {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 0 10px;
+  margin-top: 10px;
+}
+
+.card .weather-description .current-temp {
+  color: rgb(3, 63, 99);
+
+  font-size: 4rem;
+  flex-shrink: 0;
+}
+
+.card img {
+  width: 20%;
+}
+
+.card .temp-container {
+  flex-shrink: 0;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.card .temp-container .temp {
+  display: flex;
+}
+
+.card .temp-container .temp p {
+  width: 100px;
+}
+
+span {
+  font-weight: 500;
+  color: rgb(213, 137, 54);
+}
+
+.card .temp-container .temp-min-max {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.card .temp-container .max,
+.card .temp-container .min {
+  display: flex;
+  flex-shrink: 0;
+  gap: 25px;
+}
+
+@media screen and (min-width: 620px) {
+  .container form {
+    width: 480px;
+  }
+
+  .container .card {
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+  }
+  .card .temp-container .temp-min-max {
+    gap: 15px;
+  }
+}

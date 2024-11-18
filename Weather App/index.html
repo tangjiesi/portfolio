@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <main class="container">
+      <h1>Weather App</h1>
+      <form action="#">
+        <input type="text" id="city" placeholder="請輸入國家或城市英文名稱" />
+        <button class="search-btn"><i class="bx bx-search"></i></button>
+      </form>
+
+      <div class="card-container hidden">
+        <div class="card">
+          <div class="weather">
+            <div class="icon">
+              <p class="city-name">Taiwan</p>
+              <img src="./images/10d.png" alt="icon" />
+            </div>
+
+            <div class="weather-description">
+              <p class="current-temp">20℃</p>
+              <p class="weather-main">Cloud</p>
+            </div>
+          </div>
+          <div class="temp-container">
+            <div class="temp-min-max">
+              <div class="max">
+                <p>最高溫</p>
+                <span class="temp-max">20℃</span>
+              </div>
+              <div class="min">
+                <p>最低溫</p>
+                <span class="temp-min">20℃</span>
+              </div>
+            </div>
+            <div class="temp">
+              <p>體感溫度</p>
+              <span class="feel-like">20℃</span>
+            </div>
+            <div class="temp">
+              <p>濕度</p>
+              <span class="humidity">20%</span>
+            </div>
+            <div class="temp">
+              <p>風速</p>
+              <span class="speed">20 m/s</span>
+            </div>
+            <div class="temp">
+              <p>氣壓</p>
+              <span class="pressure">20 hPa</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
