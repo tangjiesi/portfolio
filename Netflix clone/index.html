@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Metflix Clone</title>
+    <meta
+      name="google-site-verification"
+      content="np7Wm0UGMhtSUaDCqA3t6eNp0ezZVNMwatRGCK1qi6c"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a class="netflix-logo">METFLIX</a>
+        <div class="login">
+          <div class="select-wrapper">
+            <select name="lang" id="lang">
+              <option value="chinese">中文</option>
+              <option value="english">English</option>
+            </select>
+            <div class="arrow">
+              <img src="./images/down-arrow-solid.png" alt="下拉" />
+            </div>
+          </div>
+          <a href="#">登入</a>
+        </div>
+      </nav>
+      <div class="information">
+        <div class="info-container">
+          <h1 class="title">看不完的電影與節目，還有更多精彩內容</h1>
+          <p>月費 $290 起，您可以隨時取消。</p>
+          <h3>
+            準備開始觀賞了嗎？請輸入您的電子郵件地址，建立或重新啟用會員資⁠格。
+          </h3>
+          <div class="input-address">
+            <input type="text" name="email" id="email" />
+            <label for="email">電子郵件地址</label>
+            <button>
+              開始使用<img src="./images/chevron-right-regular.png" />
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="container hot-now">
+        <h2>現正熱播</h2>
+        <div class="select-container">
+          <div class="select-wrapper">
+            <select name="hot" id="hot">
+              <option value="taiwan">台灣</option>
+              <option value="global">全球</option>
+            </select>
+            <div class="arrow">
+              <img src="./images/down-arrow-solid.png" alt="下拉" />
+            </div>
+          </div>
+          <div class="select-wrapper">
+            <select name="type" id="type">
+              <option value="movie">電影</option>
+              <option value="program">節目</option>
+            </select>
+            <div class="arrow">
+              <img src="./images/down-arrow-solid.png" alt="下拉" />
+            </div>
+          </div>
+        </div>
+        <div class="movie-ranking">
+          <div class="btn prev-btn">
+            <button data-btn="prev">
+              <img src="./images/chevron-left-regular.png" alt="上一個" />
+            </button>
+          </div>
+          <div class="ranks">
+            <div class="rank" data-text="1"></div>
+            <div class="rank" data-text="2"></div>
+            <div class="rank" data-text="3"></div>
+            <div class="rank" data-text="4"></div>
+            <div class="rank" data-text="5"></div>
+            <div class="rank" data-text="6"></div>
+            <div class="rank" data-text="7"></div>
+            <div class="rank" data-text="8"></div>
+            <div class="rank" data-text="9"></div>
+            <div class="rank" data-text="10"></div>
+          </div>
+          <div class="btn next-btn">
+            <button data-btn="next">
+              <img src="./images/chevron-right-regular.png" alt="下一個" />
+            </button>
+          </div>
+        </div>
+      </section>
+      <div class="modal-container" data-no="1">
+        <div class="pic">
+          <button><img src="./images/x-regular.png" alt="" /></button>
+        </div>
+        <div class="modal-info">
+          <div class="tags">
+            <span>2025</span>
+            <span>16+</span>
+            <span>節目</span>
+            <span>劇情片</span>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Consequuntur perspiciatis ipsam consequatur id molestias? Itaque!
+          </p>
+          <a> 開始<img src="./images/chevron-right-regular.png" /> </a>
+        </div>
+      </div>
+      <div class="modal-container" data-no="2">
+        <div class="pic">
+          <button><img src="./images/x-regular.png" alt="" /></button>
+        </div>
+        <div class="modal-info">
+          <div class="tags">
+            <span>2024</span>
+            <span>15+</span>
+            <span>節目</span>
+            <span>劇情片</span>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Consequuntur perspiciatis.
+          </p>
+          <a> 開始<img src="./images/chevron-right-regular.png" /> </a>
+        </div>
+      </div>
+      <div class="modal-container" data-no="3">
+        <div class="pic">
+          <button><img src="./images/x-regular.png" alt="" /></button>
+        </div>
+        <div class="modal-info">
+          <div class="tags">
+            <span>2024</span>
+            <span>16+</span>
+            <span>電影</span>
+            <span>奇幻</span>
+            <span>冒險片</span>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Consequuntur perspiciatis ipsam consequatur id molestias? Itaque!
+          </p>
+          <a> 開始<img src="./images/chevron-right-regular.png" /> </a>
+        </div>
+      </div>
+      <div class="modal-container" data-no="4">
+        <div class="pic">
+          <button><img src="./images/x-regular.png" alt="" /></button>
+        </div>
+        <div class="modal-info">
+          <div class="tags">
+            <span>2025</span>
+            <span>16+</span>
+            <span>電影</span>
+            <span>奇幻</span>
+            <span>動漫</span>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Consequuntur perspiciatis ipsam consequatur id.
+          </p>
+          <a> 開始<img src="./images/chevron-right-regular.png" /> </a>
+        </div>
+      </div>
+      <div class="modal-container" data-no="5">
+        <div class="pic">
+          <button><img src="./images/x-regular.png" alt="" /></button>
+        </div>
+        <div class="modal-info">
+          <div class="tags">
+            <span>2025</span>
+            <span>16+</span>
+            <span>節目</span>
+            <span>劇情片</span>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Consequuntur perspiciatis ipsam consequatur id molestias? Itaque!
+          </p>
+          <a> 開始<img src="./images/chevron-right-regular.png" /> </a>
+        </div>
+      </div>
+      <div class="modal-container" data-no="6">
+        <div class="pic">
+          <button><img src="./images/x-regular.png" alt="" /></button>
+        </div>
+        <div class="modal-info">
+          <div class="tags">
+            <span>2024</span>
+            <span>15+</span>
+            <span>節目</span>
+            <span>劇情片</span>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Consequuntur perspiciatis.
+          </p>
+          <a> 開始<img src="./images/chevron-right-regular.png" /> </a>
+        </div>
+      </div>
+      <div class="modal-container" data-no="7">
+        <div class="pic">
+          <button><img src="./images/x-regular.png" alt="" /></button>
+        </div>
+        <div class="modal-info">
+          <div class="tags">
+            <span>2024</span>
+            <span>16+</span>
+            <span>電影</span>
+            <span>奇幻</span>
+            <span>冒險片</span>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Consequuntur perspiciatis ipsam consequatur id molestias? Itaque!
+          </p>
+          <a> 開始<img src="./images/chevron-right-regular.png" /> </a>
+        </div>
+      </div>
+      <div class="modal-container" data-no="8">
+        <div class="pic">
+          <button><img src="./images/x-regular.png" alt="" /></button>
+        </div>
+        <div class="modal-info">
+          <div class="tags">
+            <span>2025</span>
+            <span>16+</span>
+            <span>電影</span>
+            <span>奇幻</span>
+            <span>動漫</span>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Consequuntur perspiciatis ipsam consequatur id.
+          </p>
+          <a> 開始<img src="./images/chevron-right-regular.png" /> </a>
+        </div>
+      </div>
+      <div class="modal-container" data-no="9">
+        <div class="pic">
+          <button><img src="./images/x-regular.png" alt="" /></button>
+        </div>
+        <div class="modal-info">
+          <div class="tags">
+            <span>2025</span>
+            <span>16+</span>
+            <span>節目</span>
+            <span>劇情片</span>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Consequuntur perspiciatis ipsam consequatur id molestias? Itaque!
+          </p>
+          <a> 開始<img src="./images/chevron-right-regular.png" /> </a>
+        </div>
+      </div>
+      <div class="modal-container" data-no="10">
+        <div class="pic">
+          <button><img src="./images/x-regular.png" alt="" /></button>
+        </div>
+        <div class="modal-info">
+          <div class="tags">
+            <span>2024</span>
+            <span>15+</span>
+            <span>節目</span>
+            <span>劇情片</span>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Consequuntur perspiciatis.
+          </p>
+          <a> 開始<img src="./images/chevron-right-regular.png" /> </a>
+        </div>
+      </div>
+      <div class="overlay"></div>
+      <section class="container advantage-container">
+        <h2>好處說不完</h2>
+        <div class="benefits">
+          <div class="benefit">
+            <div class="content">
+              <h3>在電視上觀賞</h3>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+            </div>
+            <img src="./images/computer.png" alt="" />
+          </div>
+          <div class="benefit">
+            <div class="content">
+              <h3>下載節目供離線觀賞</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Recusandae expedita eligendi maiores dolorum.
+              </p>
+            </div>
+            <img src="./images/down-arrow.png" alt="" />
+          </div>
+          <div class="benefit">
+            <div class="content">
+              <h3>隨時隨地都能觀賞</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Recusandae.
+              </p>
+            </div>
+            <img src="./images/telescope.png" alt="" />
+          </div>
+          <div class="benefit">
+            <div class="content">
+              <h3>建立兒童專用的使用者</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                dolorum,.
+              </p>
+            </div>
+            <img src="./images/smile.png" alt="" />
+          </div>
+        </div>
+      </section>
+      <section class="container question-container">
+        <h2>常見問題解答</h2>
+        <ul>
+          <li>
+            <button class="ques">
+              Metflix 是什麼？
+              <img src="./images/plus-regular.png" alt="plus" />
+            </button>
+            <div class="ans">
+              <div class="inner">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Id
+                  sint neque repudiandae, explicabo maxime deserunt.
+                </p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <button class="ques">
+              Metflix 如何計費？
+              <img src="./images/plus-regular.png" alt="plus" />
+            </button>
+            <div class="ans">
+              <div class="inner">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit
+                  nostrum sequi obcaecati vero quia non. Ullam doloribus
+                  laudantium veritatis totam.
+                </p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <button class="ques">
+              在哪裡觀賞？
+              <img src="./images/plus-regular.png" alt="plus" />
+            </button>
+            <div class="ans">
+              <div class="inner">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Voluptates non repudiandae perspiciatis mollitia quasi
+                  praesentium suscipit qui consectetur temporibus, beatae et
+                  libero. Eius nostrum quas modi! Omnis, nemo. Inventore,
+                  cupiditate.
+                </p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <button class="ques">
+              如何取消？
+              <img src="./images/plus-regular.png" alt="plus" />
+            </button>
+            <div class="ans">
+              <div class="inner">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Reiciendis, veniam.
+                </p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <button class="ques">
+              可以在 Metflix 觀賞什麼內容？
+              <img src="./images/plus-regular.png" alt="plus" />
+            </button>
+            <div class="ans">
+              <div class="inner">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Mollitia cum itaque beatae neque ratione debitis laboriosam!
+                </p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <button class="ques">
+              Metflix 適合兒童觀賞嗎？
+              <img src="./images/plus-regular.png" alt="plus" />
+            </button>
+            <div class="ans">
+              <div class="inner">
+                <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Voluptatem, ut?
+                </p>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Perferendis perspiciatis quam veniam ratione illo nam!
+                </p>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <section class="container input-email">
+        <h3>
+          準備開始觀賞了嗎？請輸入您的電子郵件地址，建立或重新啟用會員資⁠格。
+        </h3>
+        <div class="input-address">
+          <input type="text" name="email" id="email2" />
+          <label for="email2">電子郵件地址</label>
+          <button>
+            開始使用<img src="./images/chevron-right-regular.png" />
+          </button>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <a href="#">有疑問嗎？請聯絡我們。</a>
+      <div class="link-container">
+        <a href="#">常見問題</a>
+        <a href="#">說明中心</a>
+        <a href="#">帳戶</a>
+        <a href="#">媒體中心</a>
+        <a href="#">投資人關係</a>
+        <a href="#">工作機會</a>
+        <a href="#">觀賞方式</a>
+        <a href="#">使用條款</a>
+        <a href="#">隱私權</a>
+        <a href="#">Cookie 設定</a>
+        <a href="#">企業資訊</a>
+        <a href="#">聯絡我們</a>
+        <a href="#">速度測試</a>
+        <a href="#">法律聲明</a>
+        <a href="#">Metflix 獨家</a>
+      </div>
+      <div class="select-wrapper">
+        <select name="lang" id="lang">
+          <option value="chinese">中文</option>
+          <option value="english">English</option>
+        </select>
+        <div class="arrow">
+          <img src="./images/down-arrow-solid.png" alt="下拉" />
+        </div>
+      </div>
+    </footer>
+    <div class="start-btn">
+      <button>開始</button>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
